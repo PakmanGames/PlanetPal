@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { MessagesList } from '../NavigationBar/NavigationBar';
 
 import axios from 'axios'
 
@@ -7,7 +8,8 @@ import './ChatPage.css'
 const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 function ChatPage() {
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useContext(MessagesList);
+
     const [input, setInput] = useState('');
 
     const sendMessage = async () => {

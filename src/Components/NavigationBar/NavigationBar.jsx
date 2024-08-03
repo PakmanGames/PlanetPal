@@ -1,8 +1,12 @@
+import { useState, createContext} from 'react'
 import { Outlet, Link } from 'react-router-dom'
 
 import './NavigationBar.css'
 
+export const MessagesList = createContext()
+
 function NavigationBar() {
+    const [messages, setMessages] = useState([]);
 
     return (
         <div>
@@ -18,7 +22,9 @@ function NavigationBar() {
                     <Link to={`contact/`}>Contact</Link>
                 </div>
             </div>
-            <Outlet />
+            <MessagesList.Provider value={[messages, setMessages]}>
+                <Outlet />
+            </MessagesList.Provider>
         </div>
     );
 }
