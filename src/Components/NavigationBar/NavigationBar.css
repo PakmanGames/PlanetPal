@@ -5,13 +5,15 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
     font-weight: bold;
-    background-color: lightsteelblue;
+    /* background-color: lightsteelblue; */
+    /* opacity: 0; */
 }
 
 .nav-title {
     display: flex;
     align-items: center;
     gap: 20px;
+    color: white;
 }
 
 .logo {
@@ -19,8 +21,10 @@
 }
 
 .title {
-    font-size: 32px;
-    text-shadow: 2px 2px 4px white;
+    font-size: 100px;
+    color: white;
+    /* text-shadow: 2px 2px 4px white; */
+    width: 100%;
 }
 
 .nav-links {
@@ -31,8 +35,8 @@
 
 .nav-links a {
     text-decoration: none;
-    color: black;
-    text-shadow: 2px 2px 4px white;
+    color: white;
+    /* text-shadow: 2px 2px 4px white; */
     padding: 10px;
     border-radius: 24px;
     transition: background-color 0.40s ease;
