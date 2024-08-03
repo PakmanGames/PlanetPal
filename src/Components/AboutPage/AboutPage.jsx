@@ -1,19 +1,52 @@
-import andyPic from '../../assets/andy.jpg'
-import joshPic from '../../assets/josh.jpg'
-import ammarPic from '../../assets/ammar.jpeg'
-import yuktiPic from '../../assets/yukti.jpg'
-
+import React, { useEffect } from 'react';
+import andyPic from '../../assets/andy.jpg';
+import joshPic from '../../assets/josh.jpg';
+import ammarPic from '../../assets/ammar.jpeg';
+import yuktiPic from '../../assets/yukti.jpeg';
 import './AboutPage.css';
 
 function AboutPage() {
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1 
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    }, observerOptions);
+
+    const profiles = document.querySelectorAll('.profile');
+    profiles.forEach(profile => {
+      observer.observe(profile);
+    });
+
+    return () => {
+      profiles.forEach(profile => observer.unobserve(profile));
+    };
+  }, []);
 
   return (
     <>
       <div className="about-page">
         <h1 className="page-title">About Page</h1>
-        
+
         <p className="site-description">
-          Hey guys welcome to this goofy ahh website I mean gahdamn
+        Welcome to <strong>GreenGuide</strong>, your dedicated partner in revolutionizing waste management and recycling 
+        practices. Our website is designed to simplify the complexities of recycling and promote sustainable 
+        waste management. At WasteWise, we are passionate about making recycling accessible and straightforward 
+        for everyone. Our innovative platform provides practical tools, step-by-step guides, and educational 
+        resources to help you sort, recycle, and reduce waste efficiently. We believe that small changes in 
+        how we manage our waste can lead to significant environmental benefits. Our goal is to support individuals 
+        and communities in making informed decisions that contribute to a cleaner, healthier planet. Join us as we 
+        work together to transform waste management and foster a culture of sustainability.
         </p>
 
         <h2 className="creators-title">Creators</h2>
@@ -30,7 +63,7 @@ function AboutPage() {
               anim id est laborum.".</p>
           </div>
         </div>
-        
+
         <div className="profile reverse">
           <img src={joshPic} alt="Josh" className="profile-pic"/>
           <div className="profile-info">
