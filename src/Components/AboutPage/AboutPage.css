@@ -1,14 +1,19 @@
 body {
   font-family: 'Times New Roman', sans-serif;
   color: #333;
-  background: white;
+  background: linear-gradient(270deg, #d6e6bf, #bbdda0, #8aea81, #d0ed2a);
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 11s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .about-page {
   padding: 2em;
-  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -25,7 +30,9 @@ body {
 .site-description {
   text-align: center;
   margin-bottom: 2em;
-  font-size: 1.2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  font-size: 1.9em;
   color: #000000;
 }
 
@@ -36,6 +43,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   color: #000000;
+  animation: fadeIn 1s ease-in-out forwards 1s;
 }
 
 .profile {
@@ -44,11 +52,18 @@ body {
   margin-bottom: 2em;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1em;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.profile.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .profile.reverse {
   flex-direction: row-reverse;
-
 }
 
 .profile-pic {
@@ -57,7 +72,7 @@ body {
   margin-left: 10.5em;
   margin-right: 1.5em;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .profile.reverse .profile-pic {
@@ -66,7 +81,7 @@ body {
 }
 
 .profile-pic:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
@@ -76,7 +91,18 @@ body {
   padding: 1em;
 }
 
-.profile-info name {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-info h3 {
   margin: 0;
   font-size: 1.8em;
   color: #000000;
@@ -88,3 +114,10 @@ body {
   line-height: 1.6;
 }
 
+name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin: 0;
+}
