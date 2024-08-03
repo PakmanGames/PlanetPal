@@ -9,7 +9,9 @@ import {
 
 import App from './Components/App/App'
 import HomePage from './Components/HomePage/HomePage'
+import ChatPage from './Components/ChatPage/ChatPage'
 import AboutPage from './Components/AboutPage/AboutPage'
+import ContactPage from './Components/ContactPage/ContactPage'
 
 const router = createBrowserRouter([
   {
@@ -19,19 +21,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomePage />
+        element: <HomePage />,
       },
       {
         path: 'chat/',
-        element: <div>This is the chat</div>,
+        element: <ChatPage />,
       },
       {
         path: 'about/',
-        element: <AboutPage />
+        element: <AboutPage />,
       },
       {
         path: 'contact/',
-        element: <div>This is the contact page</div>
+        element: <ContactPage />,
       }
     ],
   },
