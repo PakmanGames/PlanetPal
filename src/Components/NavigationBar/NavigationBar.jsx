@@ -8,8 +8,8 @@ function NavigationBar() {
         <div>
             <div className="navbar">
                 <div className='nav-title'>
-                    <img src="placeholder" alt="company logo" className='logo'/>
-                    <p className='title'>Terrahacks project</p>
+                    <img src="/src/assets/GreenGuide.png" alt="company logo" className='logo'/>
+                    <p className='title'>GreenGuide Yippie</p>
                 </div>
                 <div className="nav-links">
                     <Link to={`/`}>Home</Link>
