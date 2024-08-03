@@ -9,6 +9,7 @@ import {
 
 import App from './Components/App/App'
 import HomePage from './Components/HomePage/HomePage'
+import AboutPage from './Components/AboutPage/AboutPage'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'about/',
-        element: <div>This is the about page</div>
+        element: <AboutPage />
       },
       {
         path: 'contact/',

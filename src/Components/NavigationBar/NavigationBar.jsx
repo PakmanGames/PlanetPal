@@ -13,7 +13,7 @@ function NavigationBar() {
                 </div>
                 <div className="nav-links">
                     <Link to={`/`}>Home</Link>
-                    <Link to={`chat/`}>Chat</Link>
+                    <Link to={`chat/`}>Inquire</Link>
                     <Link to={`about/`}>About</Link>
                     <Link to={`contact/`}>Contact</Link>
                 </div>
