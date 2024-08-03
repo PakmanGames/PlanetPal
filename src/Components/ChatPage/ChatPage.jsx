@@ -4,6 +4,8 @@ import axios from 'axios'
 
 import './ChatPage.css'
 
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+
 function ChatPage() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
@@ -24,7 +26,7 @@ function ChatPage() {
             },
             {
             headers: {
-                Authorization: `Bearer API KEY`,
+                Authorization: `Bearer ${OPENAI_API_KEY}`,
             },
             }
         );
