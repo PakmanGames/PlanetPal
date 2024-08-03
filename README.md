@@ -1,5 +1,5 @@
 # Terrahacks hackathon project
 This is our terrahacks hackathon project, made with react boostrapped with vite.
 
-some dependencies we used:
+some packages we used:
 `react-router-dom`

@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 
 import App from './Components/App/App'
+import HomePage from './Components/HomePage/HomePage'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <div></div>
+        element: <HomePage />
       },
       {
         path: 'chat/',

@@ -7,9 +7,9 @@ function NavigationBar() {
     return (
         <div>
             <div className="navbar">
-                <div>
-                    <img src="placeholder" alt="company logo" />
-                    <p>Company name</p>
+                <div className='nav-title'>
+                    <img src="placeholder" alt="company logo" className='logo'/>
+                    <p className='title'>Terrahacks project</p>
                 </div>
                 <div className="nav-links">
                     <Link to={`/`}>Home</Link>
