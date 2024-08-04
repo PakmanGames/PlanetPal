@@ -1,4 +1,8 @@
 import { useLocation } from 'react-router-dom'
+import landfillDumping from '../../assets/landfill-dumping.jpeg'
+import terraHacksNotRecycling from '../../assets/terrahacks-not-recycling.jpg'
+import landfillCompact from '../../assets/landfill-compact.jpeg'
+import volunteerSortRecycling from '../../assets/volunteer-sort-recycling.jpg'
 import './HomePage.css'
 
 function HomePage() {
@@ -26,19 +30,19 @@ function HomePage() {
             </div>
             <div className="hm-img">
                 <a href="#!">
-                    <img src="img\download (8).jpeg" 
+                    <img src={landfillDumping}
                     alt="Project"/>
                 </a>
                 <a href="#!">
-                    <img src="img\IMG_4582.jpg" 
+                    <img src={terraHacksNotRecycling}
                     alt="Project"/>
                 </a>
                 <a href="#!">
-                    <img src="img\somethinf.jpeg" 
+                    <img src={landfillCompact} 
                     alt="Project"/>
                 </a>
                 <a href="#!">
-                    <img src="img\something.jpg" 
+                    <img src={volunteerSortRecycling}
                     alt="Project"/>
                 </a>
             </div>

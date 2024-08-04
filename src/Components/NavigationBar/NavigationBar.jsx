@@ -1,6 +1,7 @@
 import { useState, createContext} from 'react'
 import { Outlet, Link } from 'react-router-dom'
 
+import PlanetPalLogo from '../../assets/PlanetPal.png'
 import './NavigationBar.css'
 
 export const MessagesList = createContext()
@@ -12,7 +13,7 @@ function NavigationBar() {
         <div>
             <div className="navbar">
                 <div className='nav-title'>
-                    <img src="/src/assets/PlanetPal.png" alt="company logo" className='logo'/>
+                    <img src={PlanetPalLogo} alt="company logo" className='logo'/>
                     <p className='title'>PlanetPal</p>
                 </div>
                 <div className="nav-links">
