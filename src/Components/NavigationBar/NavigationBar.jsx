@@ -23,7 +23,7 @@ function NavigationBar() {
                 </div>
             </div>
             <MessagesList.Provider value={[messages, setMessages]}>
-                <Outlet />
+                    <Outlet />
             </MessagesList.Provider>
         </div>
     );
