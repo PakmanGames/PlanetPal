@@ -1,9 +1,12 @@
 body {
   font-family: 'Times New Roman', sans-serif;
   color: #333;
-  background: linear-gradient(270deg, #d6e6bf, #bbdda0, #8aea81, #d0ed2a);
-  background-size: 400% 400%;
-  animation: gradientAnimation 11s ease infinite;
+  background: url(../../../img/AboutPage.jpeg)no-repeat center center fixed;/*(270deg, #d6e6bf, #bbdda0, #8aea81, #d0ed2a);*/
+  background-attachment: fixed;
+  background-size: 100%;
+  position:absolute;
+  /* background-size: 400% 400%; */
+  /* animation: gradientAnimation 11s ease infinite; */
 }
 
 @keyframes gradientAnimation {
@@ -21,10 +24,11 @@ body {
 .page-title {
   text-align: center;
   margin-bottom: 1em;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bold;
-  color: #000000;
+  color: white;
   letter-spacing: 0.05em;
+  width: 100%;
 }
 
 .site-description {
@@ -32,17 +36,17 @@ body {
   margin-bottom: 2em;
   margin-left: 5em;
   margin-right: 5em;
-  font-size: 1.9em;
-  color: #000000;
+  font-size: 2em;
+  color: white;
 }
 
 .creators-title {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 5em;
   font-weight: bold;
-  color: #000000;
+  color: white;
   animation: fadeIn 1s ease-in-out forwards 1s;
 }
 
@@ -68,7 +72,8 @@ body {
 
 .profile-pic {
   width: 20%;
-  border-radius: 8px;
+  border-radius: 8%;
+  border: 20px;
   margin-left: 10.5em;
   margin-right: 1.5em;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -85,11 +90,11 @@ body {
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-.profile-info {
+/* .profile-info {
   max-width: 50%;
   margin: 80px;
   padding: 1em;
-}
+} */
 
 @keyframes fadeIn {
   from {
@@ -102,22 +107,25 @@ body {
   }
 }
 
-.profile-info h3 {
-  margin: 0;
-  font-size: 1.8em;
-  color: #000000;
+.profile-info {
+  max-width: 50%;
+  margin: 80px;
+  padding: 1em;
+  font-style: Bold;
+  font-size: 1.5em;
+  color: white;
 }
 
 .profile-info p {
-  margin: 0.5em 0 0;
-  font-size: 1.2em;
+  /* margin: 0.5em 0 0; */
+  font-size: 1.5em; 
   line-height: 1.6;
 }
 
-name {
-  font-size: 1.8em;
+.profile-info name {
+  font-size: 2em;
   font-weight: bold;
-  color: #000000;
+  color: white;
   display: block;
   margin: 0;
 }

@@ -12,8 +12,8 @@ function NavigationBar() {
         <div>
             <div className="navbar">
                 <div className='nav-title'>
-                    <img src="/src/assets/GreenGuide.png" alt="company logo" className='logo'/>
-                    <p className='title'>GreenGuide Yippie</p>
+                    <img src="/src/assets/PlanetPal.png" alt="company logo" className='logo'/>
+                    <p className='title'>PlanetPal</p>
                 </div>
                 <div className="nav-links">
                     <Link to={`/`}>Home</Link>
