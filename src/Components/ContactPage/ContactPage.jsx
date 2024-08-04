@@ -69,7 +69,7 @@ function ContactPage() {
   return(
     <div className='container'>
       <div className="email-box">
-        <div className="title"><h1>Questions or Concerns? </h1>
+        <div className="contact-us-title"><h1>Questions or Concerns? </h1>
           <h1>Contact Us!</h1>
         </div>
         <div className="email-subject">
