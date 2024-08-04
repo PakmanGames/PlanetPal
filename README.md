@@ -15,9 +15,10 @@
 - Having to learn and implement emerging/new technologies
 - Time management and orginization; planning our schedules and acheiving soft deadlines 
 ## Accomplishments that we're proud of
-
+- Our problem statement and idea; we spent time contemplating but landed on this idea and instnatly knew it owuld be a hit.
+- Our About section on our web app came out much better than expected once we applied CSS and React transformations.
 ## What we learned
-
+- Learning and refining our ReactJS skills! We came into this project with limited React experience and came out as experienced Reactors&copy;.
 ## What's next for Untitled
 
 
