@@ -42,11 +42,13 @@ function ChatPage() {
     return (
         <div className='chat-component'>
             <div className="chat-box">
-                {messages.map((msg, index) => (
+                {messages.map((msg, index) => {
+                    return (
                     <div key={index} className={msg.role === 'user' ? 'user-message' : 'bot-message'}>
                         {msg.content}
                     </div>
-                ))}
+                    );
+                })}
             </div>
             <div className='input-box'>
                 <input
