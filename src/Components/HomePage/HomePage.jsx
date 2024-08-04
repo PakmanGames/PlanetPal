@@ -11,7 +11,7 @@ function HomePage() {
     }
 
     return (
-        <main id="home">
+        <div id="home">
             <div className="homepage">
                 <div className="overlay"></div>
                 <div className='content'>
@@ -42,7 +42,7 @@ function HomePage() {
                     alt="Project"/>
                 </a>
             </div>
-        </main>
+        </div>
         
     );
 }

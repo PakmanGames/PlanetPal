@@ -34,9 +34,9 @@ function AboutPage() {
   }, []);
 
   return (
-    <>
-      <div className="about-page-element">
-        <h1 className="page-title">About Us</h1>
+    <div className='about-page-element'>
+      <div className="about-page">
+        <h1 className="page-title">About Page</h1>
 
         <p className="site-description">
         Welcome to <strong>PlanetPal</strong>, your dedicated partner in revolutionizing waste management and recycling 
@@ -88,7 +88,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

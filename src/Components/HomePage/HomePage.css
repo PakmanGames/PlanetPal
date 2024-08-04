@@ -47,10 +47,11 @@
         height: 300px;
         border: 4px #fff solid;
         border-radius: 50%;
+        transition: border 0.50s ease;
 
         &:hover{
             opacity: 0.9;
-            border-color: black;
+            border-color: #07ad07;
             /* @include easeOut; */
         }
     }
