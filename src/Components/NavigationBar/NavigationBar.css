@@ -5,7 +5,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
     font-weight: bold;
-    /* background-color: lightsteelblue; */
+    background-color: #0d5b0d;
     /* opacity: 0; */
 }
 
@@ -24,7 +24,7 @@
 }
 
 .title {
-    font-size: 100px;
+    font-size: 64px;
     color: white;
     /* text-shadow: 2px 2px 4px white; */
     width: 100%;
@@ -41,12 +41,12 @@
     color: white;
     /* text-shadow: 2px 2px 4px white; */
     padding: 10px;
-    border-radius: 24px;
+    border-radius: 12px;
     transition: background-color 0.40s ease;
     transition: box-shadow 0.40s ease;
 }
 
 .nav-links a:hover {
-    background-color: #abd7e5;
+    background-color: #82e5a6;
     box-shadow: 1px 1px 3px black;
 }

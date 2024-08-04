@@ -34,7 +34,7 @@ function AboutPage() {
   }, []);
 
   return (
-    <>
+    <div className='about-page-element'>
       <div className="about-page">
         <h1 className="page-title">About Page</h1>
 
@@ -104,7 +104,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
