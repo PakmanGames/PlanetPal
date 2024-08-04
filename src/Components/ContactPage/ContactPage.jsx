@@ -67,8 +67,11 @@ function ContactPage() {
   }
 
   return(
-    <div className="email-box">
-        <div className="title"><h1>Questions or Concerns? Contact Us!</h1></div>
+    <div className='container'>
+      <div className="email-box">
+        <div className="title"><h1>Questions or Concerns? </h1>
+          <h1>Contact Us!</h1>
+        </div>
         <div className="email-subject">
             <input type="name" placeholder="Name" className="name" value={name} onChange={(e) => handleNameChange(e)}/>
             <input type="email" placeholder="Email" className="email" value={email} onChange={(e) => handleEmailChange(e)}/>
@@ -78,6 +81,9 @@ function ContactPage() {
         <button className="send-mail" onClick={(e) => sendEmail(e)}>Send</button>
         <div className="warning"></div>
     </div>
+
+    </div>
+    
   );
 }
 
