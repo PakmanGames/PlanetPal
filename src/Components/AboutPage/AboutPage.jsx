@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import andyPic from '../../assets/Andy.jpg';
-import joshPic from '../../assets/Josh.jpg';
+import andyPic from '../../assets/andy.jpg';
+import joshPic from '../../assets/josh.jpg';
 import ammarPic from '../../assets/ammar.jpg';
 import yuktiPic from '../../assets/yukti.jpg';
 import './AboutPage.css';
