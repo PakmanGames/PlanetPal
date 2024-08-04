@@ -1,5 +1,5 @@
 .chat-component {
-    background: url(../../../img/homepage.jpeg) no-repeat center center fixed;
+    background: url(../../assets/homepage.jpeg) no-repeat center center fixed;
     /* background-attachment: fixed; */
     background-size: cover;
     display:flex;
