@@ -41,7 +41,7 @@ function ChatPage() {
     };
 
     return (
-        <div>
+        <div className='chat-component'>
             <div className="chat-box">
                 {messages.map((msg, index) => (
                     <div key={index} className={msg.role === 'user' ? 'user-message' : 'bot-message'}>
@@ -49,13 +49,16 @@ function ChatPage() {
                     </div>
                 ))}
             </div>
-            <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-            />
-      <button onClick={sendMessage}>Send</button>
+            <div className='input-box'>
+                <input
+                    className='text-input'
+                    type="text"
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
+                />
+                <button className='input-button' onClick={sendMessage}>Send</button>
+            </div>
         </div>
     );
 }
