@@ -65,7 +65,7 @@ function AboutPage() {
         <div className="profile reverse">
           <img src={joshPic} alt="Josh" className="profile-pic"/>
           <div className="profile-info">
-            <span className="name">Josh Xue</span>
+            <span className="name">Joshua Xue</span>
             <p>I know Python well and also have a background in HTML, CSS as well as JavaScript. My interest lies in combining front end development with back end functionality which gives complete solutions which are appealing to look at and technically sound too. I like my job where these technologies merge together.
             </p>
           </div>
@@ -82,7 +82,7 @@ function AboutPage() {
         <div className="profile reverse">
           <img src={yuktiPic} alt="Yukti" className="profile-pic"/>
           <div className="profile-info">
-            <div className="name">Yukti</div>
+            <div className="name">Yukti Mulani</div>
             <p>
             I am a seasoned developer proficient in both backend and frontend languages. Coding thrills me; it gives me an adrenaline rush when solving difficult problems leading to my nickname “an extreme coder”. All through the project, my focus is on delivering high quality solutions by applying my broad range of skills.</p>
           </div>
