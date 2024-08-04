@@ -43,7 +43,7 @@ function ChatPage() {
         <div className='chat-component'>
             <div className='overlay'></div>
             <div className="chat-box">
-                <div className='bot-message'>Hey I am Planet Pal here to help you</div>
+                <div className='bot-message'>Hey! I'm PlanetPal, your personal waste management assistant. How can I help?</div>
                 {messages.map((msg, index) => {
                     return (
                     <div key={index} className={msg.role === 'user' ? 'user-message' : 'bot-message'}>
