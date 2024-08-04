@@ -3,9 +3,11 @@
   color: #333;
   /* background: url(../../../img/AboutPage.jpeg)no-repeat center center fixed;(270deg, #d6e6bf, #bbdda0, #8aea81, #d0ed2a); */
   background-color: rgb(245, 240, 233);
-  background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
+  display: flex;
   position:absolute;
+  top:0;
+  left:0;
   /* background-size: 400% 400%; */
   /* animation: gradientAnimation 11s ease infinite; */
 }
@@ -17,6 +19,7 @@
 }
 
 .about-page {
+  margin-top: 200px;
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);

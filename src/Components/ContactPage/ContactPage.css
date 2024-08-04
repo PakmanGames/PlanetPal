@@ -1,20 +1,16 @@
-/* body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0; /*Optional: Background color for the page 
-} */
+
 
 .container {
+  background: url(../../../img/homepage.jpeg) no-repeat center center fixed;
+  background-size: cover;
   display: flex;
+  position: absolute;
+  top:0;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-  margin-top: 40px;
+  /* margin-top: 200px; */
 }
 
 .email-box {
@@ -31,6 +27,7 @@
   border: 5px solid darkslateblue;
   background-color: aliceblue;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
 }
 
 /* .email-box {

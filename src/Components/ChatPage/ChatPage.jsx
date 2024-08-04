@@ -41,7 +41,9 @@ function ChatPage() {
 
     return (
         <div className='chat-component'>
+            <div className='overlay'></div>
             <div className="chat-box">
+                <div className='bot-message'>Hey I am Planet Pal here to help you</div>
                 {messages.map((msg, index) => {
                     return (
                     <div key={index} className={msg.role === 'user' ? 'user-message' : 'bot-message'}>
