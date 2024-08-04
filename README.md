@@ -7,7 +7,7 @@
 - PlanetPal is a web app powered by cutting-edge generative AI technologies made to revolutionize education in waste management.
 - Ask the assistant ANY question regarding which bin to throw your waste, and they will answer!
 ## ⚒️ How we built it
-Our project is a React project bootstrapped with vite for the frontend. For the backend we incorporate the OpenAI API to utilize their gpt-3.5-turbo LLM. Along with this, we utilized various packages such as react-router-dom, axios, gsap, and @emailjs/browser to implement various features in our web app such as routes, API connections, and animated styling.
+Our project is a React project bootstrapped with vite for the frontend. For the backend we incorporate the OpenAI API to utilize their gpt-3.5-turbo LLM. Along with this, we utilized various packages such as `react-router-dom`, `axios`, `gsap`, and `@emailjs/browser` to implement various features in our web app such as routes, API connections, and animated styling.
 
 - React
 - OpenAI api
@@ -23,13 +23,8 @@ Our project is a React project bootstrapped with vite for the frontend. For the 
 - Our About section on our web app came out much better than expected once we applied CSS and React transformations.
 ## 📝 What we learned
 - Learning and refining our ReactJS skills! We came into this project with limited React experience and came out as experienced Reactors&copy;.
+- Learning emerging technologies: OpenAI's gpt-3.5-turbo LLM API, and integrating it into our web app
+- Learning backend development: EmailJS and Node
+- Of upmost and extreme importance, COLLABORATION. Learning to efficiently collaborate and allocate roles so that the least conflicts arose on git and github. 😀
 ## 💡 What's next for PlanetPal
-
-
-
-
-
-This is our terrahacks hackathon project, made with react boostrapped with vite.
-
-some packages we used:
-`react-router-dom`, `axios`, 'gsap', '@emailjs/browser'
+PlanetPal possess immense potential for expansion in the future. So long as the Earth's resources cannot be recycled infinitely and humanity faces scarcity, demand for waste management education will remain high. Let us change the world by educating one by one -- Aim for the sky, shoot for the stars!!
