@@ -2,7 +2,6 @@ import { useState, useContext } from 'react'
 import { MessagesList } from '../NavigationBar/NavigationBar';
 
 import axios from 'axios'
-
 import './ChatPage.css'
 
 const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
