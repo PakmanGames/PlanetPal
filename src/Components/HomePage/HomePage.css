@@ -1,6 +1,6 @@
 /* HomePage.css */
 .homepage {
-    background: url(../../../img/homepage.jpeg) no-repeat center center fixed;
+    background: url(../../assets/homepage.jpeg) no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
     position:absolute;
